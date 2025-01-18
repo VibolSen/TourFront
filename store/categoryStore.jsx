@@ -1,6 +1,6 @@
 // src/store/categoryStore.js
 import { create } from "zustand";
-const API_CATEGORY_URL = "http://localhost:3500/api/categories";
+const API_CATEGORY_URL = "https://tourback-9btr.onrender.com/api/categories";
 const useCategoryStore = create((set) => ({
   categories: [],
   loading: false,

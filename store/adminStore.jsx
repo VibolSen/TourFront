@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
-const API_URL = "http://localhost:3500/api/admins";
+const API_URL = "https://tourback-9btr.onrender.com/api/admins";
+
 export const useAdminStore = create((set) => ({
   admin: null, // Admin object (or null if not logged in)
   token: null, // JWT token for authentication

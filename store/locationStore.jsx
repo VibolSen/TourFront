@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const API_LOCATION_URL = "http://localhost:3500/api/locations";
+const API_LOCATION_URL = "https://tourback-9btr.onrender.com/api/locations";
 
 export const useLocationStore = create((set, get) => ({
   locations: [],

@@ -406,7 +406,9 @@ function AddPackageForm({ onClose, tour, id }) {
           <div className="space-y-6">
             <div className="space-y-4">
               <div>
-                <Label htmlFor="packageName"  className="text-lg">Package name</Label>
+                <Label htmlFor="packageName" className="text-lg">
+                  Package name
+                </Label>
                 <Input
                   id="packageName"
                   placeholder="Package name"
@@ -415,7 +417,9 @@ function AddPackageForm({ onClose, tour, id }) {
                 />
               </div>
               <div>
-                <Label htmlFor="packageName" className="text-lg">Price</Label>
+                <Label htmlFor="packageName" className="text-lg">
+                  Price
+                </Label>
                 <Input
                   id="price"
                   placeholder="Price"
@@ -436,17 +440,11 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label htmlFor="location"  className="text-lg">Location</Label>
-                <Input
-                  id="location"
-                  value={formData.location}
-                  onChange={(e) =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      location: e.target.value,
-                    }))
-                  }
-                >
+                <Label htmlFor="location" className="text-lg">
+                  Location
+                </Label>
+
+                <select>
                   <option value="" disabled>
                     Select a location
                   </option>
@@ -459,7 +457,7 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label  className="text-lg">Drop image here</Label>
+                <Label className="text-lg">Drop image here</Label>
                 <div
                   className="border-2 border-dashed rounded-lg p-8 text-center cursor-pointer hover:bg-gray-50"
                   onClick={() => document.getElementById("fileInput").click()}
@@ -520,7 +518,9 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label htmlFor="description"  className="text-lg">Description</Label>
+                <Label htmlFor="description" className="text-lg">
+                  Description
+                </Label>
                 <Textarea
                   id="description"
                   placeholder="Enter description"
@@ -531,7 +531,9 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label htmlFor="packageDescription"  className="text-lg">Package Plan Description</Label>
+                <Label htmlFor="packageDescription" className="text-lg">
+                  Package Plan Description
+                </Label>
                 <Textarea
                   id="packageDescription"
                   placeholder="please describe your plan in list ."
@@ -542,7 +544,9 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
               {/* Tip describe*/}
               <div>
-                <Label htmlFor="DescriptionTip"  className="text-lg">Tip Description</Label>
+                <Label htmlFor="DescriptionTip" className="text-lg">
+                  Tip Description
+                </Label>
                 <Textarea
                   id="DescriptionTip"
                   placeholder="please describe your Tip."
@@ -551,9 +555,6 @@ function AddPackageForm({ onClose, tour, id }) {
                   onChange={handleInputChange}
                 />
               </div>
-
-              
-
             </div>
           </div>
 
@@ -584,7 +585,9 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label htmlFor="days"  className="text-lg">Days</Label>
+                <Label htmlFor="days" className="text-lg">
+                  Days
+                </Label>
                 <div className="flex items-center gap-2">
                   <Input
                     type="number"
@@ -599,7 +602,9 @@ function AddPackageForm({ onClose, tour, id }) {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="startDate"  className="text-lg">Start Date</Label>
+                  <Label htmlFor="startDate" className="text-lg">
+                    Start Date
+                  </Label>
                   <Input
                     type="date"
                     id="startDate"
@@ -608,7 +613,9 @@ function AddPackageForm({ onClose, tour, id }) {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="endDate"  className="text-lg">End Date</Label>
+                  <Label htmlFor="endDate" className="text-lg">
+                    End Date
+                  </Label>
                   <Input
                     type="date"
                     id="endDate"
@@ -619,7 +626,9 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-                <Label htmlFor="status"  className="text-lg">Status</Label>
+                <Label htmlFor="status" className="text-lg">
+                  Status
+                </Label>
                 <Select
                   value={formData.status}
                   onValueChange={(value) =>
