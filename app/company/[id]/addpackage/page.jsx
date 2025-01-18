@@ -436,13 +436,8 @@ function AddPackageForm({ onClose, tour, id }) {
               </div>
 
               <div>
-<<<<<<< Updated upstream
                 <Label htmlFor="location"  className="text-lg">Location</Label>
                 <Input
-=======
-                <Label htmlFor="location">Location</Label>
-                <select
->>>>>>> Stashed changes
                   id="location"
                   value={formData.location}
                   onChange={(e) =>
@@ -566,41 +561,6 @@ function AddPackageForm({ onClose, tour, id }) {
           <div className="space-y-6">
             <div className="space-y-4">
               <div>
-<<<<<<< Updated upstream
-                <Label htmlFor="category"  className="text-lg">Category</Label>
-                <Select
-                  value={formData.category}
-                  onValueChange={(value) =>
-                    setFormData((prev) => ({ ...prev, category: value }))
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select category" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="category1">Category 1</SelectItem>
-                    <SelectItem value="category2">Category 2</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div>
-                <Label htmlFor="type"  className="text-lg">Type</Label>
-                <Select
-                  value={formData.type}
-                  onValueChange={(value) =>
-                    setFormData((prev) => ({ ...prev, type: value }))
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="type1">Type 1</SelectItem>
-                    <SelectItem value="type2">Type 2</SelectItem>
-                  </SelectContent>
-                </Select>
-=======
                 <Label>Categories</Label>
                 <div className="grid grid-cols-2 gap-4">
                   {categories.map((category) => (
@@ -621,7 +581,6 @@ function AddPackageForm({ onClose, tour, id }) {
                     </div>
                   ))}
                 </div>
->>>>>>> Stashed changes
               </div>
 
               <div>
@@ -677,36 +636,6 @@ function AddPackageForm({ onClose, tour, id }) {
                 </Select>
               </div>
 
-<<<<<<< Updated upstream
-              <div>
-  <Label  className="text-lg">Amenities</Label>
-  <div className="grid grid-cols-2 gap-4 mt-2">
-    {Object.entries(formData.amenities).map(([key, value]) => (
-      <div key={key} className="flex items-center space-x-2">
-        <input
-          type="checkbox"
-          id={key}
-          checked={value}
-          onChange={(e) => {
-            setFormData((prevState) => ({
-              ...prevState,
-              amenities: {
-                ...prevState.amenities,
-                [key]: e.target.checked,
-              },
-            }));
-          }}
-          className="form-checkbox h-4 w-4 text-blue-600 transition duration-150 ease-in-out"
-        />
-        <label htmlFor={key} className="text-sm capitalize">
-          {key}
-        </label>
-      </div>
-    ))}
-  </div>
-</div>
-
-=======
               <div className="grid grid-cols-3 gap-4">
                 <div>
                   <Label htmlFor="price">Price</Label>
@@ -728,7 +657,6 @@ function AddPackageForm({ onClose, tour, id }) {
                   </div>
                 </CardContent>
               </Card>
->>>>>>> Stashed changes
             </div>
           </div>
         </div>
@@ -746,13 +674,9 @@ function AddPackageForm({ onClose, tour, id }) {
           <Button variant="outline" onClick={onClose} disabled={isLoading}>
             Cancel
           </Button>
-<<<<<<< Updated upstream
-          <Button className="bg-blue-600  font-bold  text-white" type="submit">Post</Button>
-=======
           <Button type="submit" disabled={isLoading}>
             {isLoading ? "Submitting..." : tour ? "Update" : "Create"}
           </Button>
->>>>>>> Stashed changes
         </div>
       </form>
     </div>
